@@ -1,6 +1,6 @@
 # My Advice
 
-Welcome to your Week 1 assignment! This repo gives you a fully configured professional tooling setup. Your job is to use an AI agent conversation to plan and build your personal "What Should I...?" site inside it.
+This repo gives you a fully configured professional tooling setup. Your job is to use an AI agent conversation to plan and build your personal "What Should I...?" site inside it.
 
 The tooling is already here — linting, formatting, pre-commit hooks, CI, and a dev server. You bring the site.
 
