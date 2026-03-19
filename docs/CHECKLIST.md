@@ -2,15 +2,7 @@
 
 Use this checklist to make sure you have completed every part of the assignment. Each item should be a clear yes or no.
 
-## Part 1 — Get it running
-
-- [ ] Cloned the repo and opened it in VS Code
-- [ ] Ran `npm install` successfully
-- [ ] Ran `npm run dev` — Vite started without errors
-- [ ] Ran `npm run lint` — passed with no errors
-- [ ] Made a test commit and confirmed Husky ran lint-staged
-
-## Part 2 — Plan your site with your agent
+## Part 1 — Plan your site with your agent
 
 - [ ] Opened original "What Should I...?" repo in VS Code
 - [ ] Started a Copilot agent conversation with the provided opening message
@@ -18,6 +10,14 @@ Use this checklist to make sure you have completed every part of the assignment.
 - [ ] Had a back-and-forth planning conversation (not just one message)
 - [ ] Produced a `BUILD-PROMPT.md` file
 - [ ] Copied `BUILD-PROMPT.md` into this repo
+
+## Part 2 — Get it running
+
+- [ ] Cloned the repo and opened it in VS Code
+- [ ] Ran `npm install` successfully
+- [ ] Ran `npm run dev` — Vite started without errors
+- [ ] Ran `npm run lint` — passed with no errors
+- [ ] Made a test commit and confirmed Husky ran lint-staged
 
 ## Part 3 — Build the site
 

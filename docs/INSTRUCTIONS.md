@@ -4,35 +4,11 @@ This assignment has five parts. Work through them in order. Each part builds on 
 
 ---
 
-## Part 1 — Get it running
+## Part 1 — Plan your site with your agent
 
-Start by making sure everything works before you change anything.
+Before you touch this repo, you need a plan. You will create that plan by having a conversation with an AI agent in your **original** "What Should I...?" repo.
 
-1. **Clone this repo** and open it in VS Code
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-   This also installs Husky, which sets up a pre-commit hook automatically.
-3. **Start the dev server:**
-   ```bash
-   npm run dev
-   ```
-   Nothing will appear in the browser — that is expected. You haven't created any HTML files yet. Vite is running and ready for when you do.
-4. **Confirm linting passes:**
-   ```bash
-   npm run lint
-   ```
-   This should pass with no errors. The `js/` folder only has a `.gitkeep` file right now, so there is nothing to lint.
-5. **Confirm Husky is working:** Make a small test commit (like editing this file with a comment). When you commit, you should see lint-staged run in your terminal. If it does, Husky is installed correctly. You can revert this commit afterward if you like.
-
-Once everything runs without errors, you are ready for Part 2.
-
----
-
-## Part 2 — Plan your site with your agent
-
-In this step you will plan your new site by having a conversation with an AI agent in your **original** "What Should I...?" repo.
+> **Model selection matters.** Copilot lets you choose which model your agent uses. You will see a multiplier next to each model — 0x (free), 1x, 3x, and higher. The higher the multiplier, the more capable the model, but the faster it burns through your premium request budget. A planning conversation is where model quality matters most. Spend the 1x or 3x here — one good planning conversation beats three mediocre ones. See [docs/guides/choosing-your-model.md](guides/choosing-your-model.md) for the full breakdown.
 
 1. **Open your original "What Should I...?" repo** in VS Code
 2. **Start a Copilot agent conversation** and send this exact message:
@@ -58,6 +34,32 @@ In this step you will plan your new site by having a conversation with an AI age
 6. **Important: your data stays inside `BUILD-PROMPT.md`.** Any dataset, array, or object from your original repo should be included as a code block inside the build prompt — not copied as a separate file. No source files travel between repos. The build prompt is the only thing that crosses over.
 
 7. **Copy `BUILD-PROMPT.md` into this repo** (your my-advice repo). You will use it in Part 3.
+
+---
+
+## Part 2 — Get it running
+
+If you have already cloned this repo and run `npm install`, confirm everything still works and move on. If not, do it now.
+
+1. **Clone this repo** and open it in VS Code
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+   This also installs Husky, which sets up a pre-commit hook automatically.
+3. **Start the dev server:**
+   ```bash
+   npm run dev
+   ```
+   Nothing will appear in the browser — that is expected. You haven't created any HTML files yet. Vite is running and ready for when you do.
+4. **Confirm linting passes:**
+   ```bash
+   npm run lint
+   ```
+   This should pass with no errors. The `js/` folder only has a `.gitkeep` file right now, so there is nothing to lint.
+5. **Confirm Husky is working:** Make a small test commit (like editing this file with a comment). When you commit, you should see lint-staged run in your terminal. If it does, Husky is installed correctly. You can revert this commit afterward if you like.
+
+Once everything runs without errors, you are ready for Part 3.
 
 ---
 

@@ -34,7 +34,7 @@ Your docs folder has everything you need:
 - [docs/reference/eslint-rules.md](docs/reference/eslint-rules.md) — every rule in this project explained
 - [docs/reference/prettier-options.md](docs/reference/prettier-options.md) — formatting options reference
 - [docs/reference/vite-vitest-basics.md](docs/reference/vite-vitest-basics.md) — what Vite and Vitest do
-- [docs/reference/netlify-cli-cheatsheet.md](docs/reference/netlify-cli-cheatsheet.md) — Netlify CLI quick reference
+- [docs/guides/choosing-your-model.md](docs/guides/choosing-your-model.md) — how to pick the right Copilot model for the task
 - [docs/guides/adding-features.md](docs/guides/adding-features.md) — stretch goals and extra features
 - [docs/guides/modifying-context.md](docs/guides/modifying-context.md) — how to customize your AGENTS.md
 
