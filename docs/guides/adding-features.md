@@ -32,7 +32,7 @@ Run it with `npm run test`. Replace `yourFunction` with an actual function from 
 
 **Add a results page with shared navigation.**
 
-If your agent only generated one page, add `results.html` as a second page. Then use `js/nav.js` to inject a shared navigation bar into both pages.
+Add a second page — `detail.html` — and use `js/nav.js` to inject a shared navigation bar into both pages. The detail page will show expanded information for a single item (you will build this out more in Week 2).
 
 The nav injection pattern:
 
@@ -41,7 +41,7 @@ The nav injection pattern:
 const nav = `
   <nav>
     <a href="/">Home</a>
-    <a href="/results.html">Results</a>
+    <a href="/detail.html">Detail</a>
   </nav>
 `;
 

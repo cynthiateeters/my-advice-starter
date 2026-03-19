@@ -4,7 +4,7 @@
 
 When you edit `AGENTS.md`, you are doing context engineering — shaping the information an AI agent reads before it responds to you. This is a real skill used by professional developers. The better your context, the better the agent's output.
 
-`AGENTS.md` is read by every AI agent that works in your repo: GitHub Copilot, Gemini CLI, Claude Code. One file controls them all.
+`AGENTS.md` is read by every AI agent that works in your repo: GitHub Copilot, Claude Code, and others. One file controls them all.
 
 ## Where to make changes
 

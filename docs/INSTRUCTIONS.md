@@ -55,7 +55,9 @@ In this step you will plan your new site by having a conversation with an AI age
 
 5. **When your planning conversation is complete**, the result is a file called `BUILD-PROMPT.md`. This file captures your design decisions and tells the next agent exactly what to build.
 
-6. **Copy `BUILD-PROMPT.md` into this repo** (the 10x-toolkit repo). You will use it in Part 3.
+6. **Important: your data stays inside `BUILD-PROMPT.md`.** Any dataset, array, or object from your original repo should be included as a code block inside the build prompt — not copied as a separate file. No source files travel between repos. The build prompt is the only thing that crosses over.
+
+7. **Copy `BUILD-PROMPT.md` into this repo** (your my-advice repo). You will use it in Part 3.
 
 ---
 
@@ -78,7 +80,7 @@ Now you will use your build prompt to generate your site inside this repo.
    ```bash
    npm run dev
    ```
-   Confirm your site loads in the browser. Click through both pages and test your form.
+   Confirm your page loads in the browser and test your form.
 
 ---
 
@@ -106,7 +108,11 @@ Wrap up by building, deploying, and reflecting on the process.
    npm run build
    ```
    Confirm Vite builds successfully with no errors.
-2. **Deploy to Netlify** and save your live URL
+2. **Deploy to Netlify using the Netlify CLI.** If you haven't set up the CLI yet, see the Netlify CLI guide on Canvas for installation and login steps. Then deploy:
+   ```bash
+   netlify deploy --prod
+   ```
+   Follow the prompts to link your repo to a new Netlify site. Save your live URL — you will submit it.
 3. **Push to GitHub** and check the Actions tab — confirm the lint workflow runs and shows a green check
 4. **Complete `ai-collaboration-summary-template.md`** — answer every question thoughtfully. This is where you reflect on what you learned about working with AI agents in a real tooling environment.
 

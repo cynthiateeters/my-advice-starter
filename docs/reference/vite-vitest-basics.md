@@ -28,6 +28,6 @@ You may not write tests in this assignment, but the tool is ready if you want to
 ## Things to know
 
 - Vite serves files from the project root, not from a `src/` folder
-- Your HTML files (`index.html`, `results.html`) go in the project root
+- Your HTML files (`index.html`) go in the project root
 - Your JS files go in the `js/` folder and are linked from HTML with `<script type="module" src="/js/app.js"></script>`
 - Vite handles ES modules natively — `import` and `export` work without any extra setup

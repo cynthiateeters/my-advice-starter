@@ -1,6 +1,6 @@
 # What Makes a Good AGENTS.md
 
-`AGENTS.md` is read by every AI agent that works in your repo — GitHub Copilot, Gemini CLI, Claude Code. One file, all tools. It replaces `.github/copilot-instructions.md`.
+`AGENTS.md` is read by every AI agent that works in your repo — GitHub Copilot, Claude Code, and others. One file, all tools. It replaces `.github/copilot-instructions.md`.
 
 Think of it as standing instructions you give every collaborator before they touch your code. The shorter and more specific it is, the better it works.
 
