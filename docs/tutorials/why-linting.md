@@ -21,7 +21,7 @@ Teams use linters because:
 
 ## The rules in this project
 
-This project's `.eslintrc.json` has five key rules:
+This project's `.eslintrc.cjs` has five key rules:
 
 - **`no-eval`** — blocks `eval()`. You already know why from Security Safari.
 - **`no-var`** — blocks `var`. You have been using `const` and `let` since early in the course. `var` has scoping behavior that causes subtle bugs.
@@ -33,5 +33,5 @@ This project's `.eslintrc.json` has five key rules:
 
 | Command          | What it does                                                                         |
 | ---------------- | ------------------------------------------------------------------------------------ |
-| `npm run lint`   | Run the linter on all JS files in `js/`                                              |
+| `npm run lint`   | Run the linter on all JS files in `src/js/`                                          |
 | Fix a lint error | Read the rule name in the error message, then check `docs/reference/eslint-rules.md` |

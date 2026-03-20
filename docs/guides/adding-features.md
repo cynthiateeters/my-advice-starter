@@ -8,9 +8,9 @@ Once your site is running and linting passes, try one of these tiers to push you
 
 **Add a second Vitest test for an existing function.**
 
-Your `js/matching.js` file has logic functions that filter or match data. Write a test that imports one of those functions and checks that it returns the correct result for a specific input.
+Your `src/js/matching.js` file has logic functions that filter or match data. Write a test that imports one of those functions and checks that it returns the correct result for a specific input.
 
-Create a file called `js/matching.test.js`:
+Create a file called `src/js/matching.test.js`:
 
 ```js
 import { describe, it, expect } from "vitest";
@@ -30,28 +30,18 @@ Run it with `npm run test`. Replace `yourFunction` with an actual function from 
 
 ## Stretching
 
-**Add a results page with shared navigation.**
+**Add a "no results" state.**
 
-Add a second page — `detail.html` — and use `js/nav.js` to inject a shared navigation bar into both pages. The detail page will show expanded information for a single item (you will build this out more in Week 2).
+Right now, if your matching logic returns an empty array, the results area probably just goes blank. That is confusing for users — they do not know if something broke or if nothing matched.
 
-The nav injection pattern:
+Add a check in `src/js/app.js`: after you run your matching function, if the results array is empty, show a friendly message instead of rendering cards. Something like "No matches found — try different options."
 
-```js
-// js/nav.js
-const nav = `
-  <nav>
-    <a href="/">Home</a>
-    <a href="/detail.html">Detail</a>
-  </nav>
-`;
+Things to think about:
 
-const header = document.querySelector("header");
-if (header) {
-  header.innerHTML = nav;
-}
-```
-
-Import `nav.js` in both HTML files with a `<script type="module">` tag. This way, you update navigation in one place and it appears on every page.
+- Where does the message go? Use the same container your results render into.
+- Use `textContent` to set the message, not `innerHTML` — there is no HTML to parse.
+- What happens when the user tries again and does get results? Make sure the "no results" message disappears.
+- Style the message so it is visually distinct from result cards — a different color, centered text, or a subtle border.
 
 ---
 

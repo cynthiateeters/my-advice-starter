@@ -23,7 +23,7 @@ Use this checklist to make sure you have completed every part of the assignment.
 
 - [ ] Pasted build prompt into an agent conversation in this repo
 - [ ] Agent generated `index.html`
-- [ ] Agent generated JS files in `js/`
+- [ ] Agent generated JS files in `src/js/` and CSS in `src/css/`
 - [ ] Ran `npm run lint` and fixed any errors
 - [ ] Ran `npm run dev` and confirmed the site loads
 

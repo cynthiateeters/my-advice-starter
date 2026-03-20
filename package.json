@@ -6,13 +6,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint js/ --ext .js --no-error-on-unmatched-pattern",
+    "lint": "eslint src/js/ --ext .js --no-error-on-unmatched-pattern",
     "format": "prettier --write .",
     "test": "vitest",
     "prepare": "husky"
   },
   "lint-staged": {
-    "js/**/*.js": [
+    "src/js/**/*.js": [
       "eslint --fix",
       "prettier --write"
     ]

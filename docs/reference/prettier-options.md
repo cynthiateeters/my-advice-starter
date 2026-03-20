@@ -13,13 +13,13 @@ Use single quotes for strings instead of double quotes.
 Before formatting:
 
 ```js
-const name = "Kit";
+const name = "HAP";
 ```
 
 After formatting:
 
 ```js
-const name = "Kit";
+const name = 'HAP';
 ```
 
 ---
@@ -31,13 +31,15 @@ Always add semicolons at the end of statements.
 Before formatting:
 
 ```js
-const name = "Kit";
+const name = 'HAP'
+const age = 2
 ```
 
 After formatting:
 
 ```js
-const name = "Kit";
+const name = 'HAP';
+const age = 2;
 ```
 
 ---
@@ -50,7 +52,7 @@ Before formatting:
 
 ```js
 if (true) {
-  doSomething();
+      doSomething();
 }
 ```
 
@@ -71,13 +73,21 @@ Add trailing commas where ES5 allows them — in arrays, objects, and function p
 Before formatting:
 
 ```js
-const colors = ["red", "blue", "green"];
+const colors = [
+  'red',
+  'blue',
+  'green'
+];
 ```
 
 After formatting:
 
 ```js
-const colors = ["red", "blue", "green"];
+const colors = [
+  'red',
+  'blue',
+  'green',
+];
 ```
 
 Trailing commas make diffs cleaner. When you add a new item, only one line changes instead of two.

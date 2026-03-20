@@ -18,7 +18,7 @@ JavaScript student, post-midterm. Knows: `const`/`let`, template literals, `if/e
 - ES modules only — `import`/`export`, never `require`
 - `const` by default; `let` only when reassignment needed; never `var`
 - `textContent` for user input in DOM; `innerHTML` only for hardcoded template literals
-- No `eval()`, no leftover `console.log` in committed code
+- No `eval()`; `console.log` is allowed for debugging during development
 - Logic functions (filtering, matching, data) must not touch the DOM — keep them testable
 
 ### HTML
@@ -50,10 +50,10 @@ JavaScript student, post-midterm. Knows: `const`/`let`, template literals, `if/e
 ### Files
 
 ```
-js/data.js       ← dataset only
-js/matching.js   ← logic, no DOM
-js/nav.js        ← shared nav injection
-js/app.js        ← DOM wiring only
+src/js/data.js       ← dataset only
+src/js/matching.js   ← logic, no DOM
+src/js/app.js        ← DOM wiring only
+src/css/style.css    ← all styles
 ```
 
 ## My personal instructions

@@ -1,6 +1,6 @@
 # ESLint rules reference
 
-Every rule configured in this project's `.eslintrc.json`, explained with examples.
+Every rule configured in this project's `.eslintrc.cjs`, explained with examples.
 
 ---
 
@@ -33,13 +33,13 @@ const result = 2 + 2;
 Fails:
 
 ```js
-var name = "Kit";
+var name = "HAP";
 ```
 
 Passes:
 
 ```js
-const name = "Kit";
+const name = "HAP";
 ```
 
 ---

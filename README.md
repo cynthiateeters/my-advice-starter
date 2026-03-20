@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-After `npm install`, Husky sets up pre-commit hooks automatically. Running `npm run dev` starts the Vite dev server — nothing will appear in the browser yet because you haven't created your HTML files. That's expected.
+After `npm install`, Husky sets up pre-commit hooks automatically. Running `npm run dev` starts the Vite dev server — you should see a placeholder page in the browser.
 
 ## Learning objectives
 
@@ -31,6 +31,7 @@ Your docs folder has everything you need:
 - [docs/tutorials/why-linting.md](docs/tutorials/why-linting.md) — what linting is and why it matters
 - [docs/tutorials/how-husky-works.md](docs/tutorials/how-husky-works.md) — how pre-commit hooks work
 - [docs/tutorials/github-actions-101.md](docs/tutorials/github-actions-101.md) — understanding CI with GitHub Actions
+- [docs/tutorials/project-structure.md](docs/tutorials/project-structure.md) — how src, dist, and public relate through Vite and Netlify
 - [docs/reference/eslint-rules.md](docs/reference/eslint-rules.md) — every rule in this project explained
 - [docs/reference/prettier-options.md](docs/reference/prettier-options.md) — formatting options reference
 - [docs/reference/vite-vitest-basics.md](docs/reference/vite-vitest-basics.md) — what Vite and Vitest do
@@ -40,6 +41,6 @@ Your docs folder has everything you need:
 
 ## Where your site lives
 
-The `js/` folder is where your generated site's JavaScript files will go. Your AI agent conversation will create files like `js/data.js`, `js/matching.js`, `js/nav.js`, and `js/app.js`.
+The `src/` folder is where your generated site's code will go. Your AI agent conversation will create files like `src/js/data.js`, `src/js/matching.js`, and `src/js/app.js`, plus `src/css/style.css` for your styles.
 
-The `index.html` file will be created by you via your Copilot agent conversation — it doesn't exist yet, and that's by design.
+A placeholder `index.html` is included so the project builds and runs from the start. Your AI agent conversation will replace it with your real site.

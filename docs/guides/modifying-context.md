@@ -14,13 +14,15 @@ The section you own is **"My personal instructions"** at the bottom. This is whe
 
 ## What full credit looks like
 
-Here is a real example. Kit was working on an earlier version of this assignment and noticed the agent was generating inaccessible designs. After that conversation, Kit added these rules to the AGENTS.md:
+Imagine the agent keeps giving you long blocks of code with no explanation. You add this to your personal instructions:
 
-> - All text must meet 4.5:1 contrast ratio
-> - No color-only indicators (use icons or text too)
-> - All interactive elements must be keyboard accessible
+> - When I ask for help, explain the approach in one or two sentences before showing any code.
 
-That is what context engineering looks like in practice — you notice a problem, you write a rule, and the agent follows it next time. Kit did not just fix the one file. Kit fixed every future conversation.
+Or maybe the agent keeps suggesting minimal black-and-white designs when your site has a warm, colorful aesthetic:
+
+> - This site uses a warm color palette. Do not suggest minimal or monochrome designs.
+
+That is what context engineering looks like in practice — you notice a problem, you write a rule, and the agent follows it next time. You are not just fixing one conversation. You are fixing every future conversation.
 
 ## How to write good personal instructions
 

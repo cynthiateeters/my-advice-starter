@@ -4,3 +4,5 @@ Every console error, browser warning, or lint failure gets a row here. Don't del
 
 | Date | Error message | File + line | My hypothesis | Fix | Blamed |
 | ---- | ------------- | ----------- | ------------- | --- | ------ |
+
+Blamed: who or what introduced the error — you, the agent, or the starter code.

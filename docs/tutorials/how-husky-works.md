@@ -16,7 +16,7 @@ The hook lives in `.husky/pre-commit`. It runs one command:
 npx lint-staged
 ```
 
-**lint-staged** only checks the files you are about to commit — not the entire project. This keeps it fast. It runs ESLint and Prettier on any staged `.js` files in the `js/` folder.
+**lint-staged** only checks the files you are about to commit — not the entire project. This keeps it fast. It runs ESLint and Prettier on any staged `.js` files in the `src/js/` folder.
 
 ## What it looks like when it blocks a commit
 
@@ -27,7 +27,7 @@ $ git commit -m "add matching logic"
 
 ✔ Preparing lint-staged...
 ❌ Running tasks for staged files...
-  ❌ js/**/*.js — 1 file
+  ❌ src/js/**/*.js — 1 file
     ❌ eslint --fix [FAILED]
 ↓ Skipped because of errors from tasks.
 ✔ Reverting to original state because of errors...
@@ -35,7 +35,7 @@ $ git commit -m "add matching logic"
 
 ❌ eslint --fix:
 
-/path/to/your/repo/js/matching.js
+/path/to/your/repo/src/js/matching.js
   3:1  error  Unexpected var, use let or const instead  no-var
 
 ✖ 1 problem (1 error, 0 warnings)
@@ -45,7 +45,7 @@ husky - pre-commit script failed (code 1)
 
 Here is how to read that output:
 
-1. **The file name** — `js/matching.js` tells you which file has the problem
+1. **The file name** — `src/js/matching.js` tells you which file has the problem
 2. **The location** — `3:1` means line 3, column 1
 3. **The message** — `Unexpected var, use let or const instead` tells you exactly what is wrong
 4. **The rule name** — `no-var` is the ESLint rule that caught it
@@ -55,7 +55,7 @@ Here is how to read that output:
 1. Open the file mentioned in the error
 2. Go to the line number shown
 3. Fix the issue (in the example above, change `var` to `const` or `let`)
-4. Stage the fixed file: `git add js/matching.js`
+4. Stage the fixed file: `git add src/js/matching.js`
 5. Commit again: `git commit -m "add matching logic"`
 
 The bouncer will check again. If everything passes, the commit goes through.
