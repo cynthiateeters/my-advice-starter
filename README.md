@@ -44,6 +44,8 @@ Your docs folder has everything you need:
 - [docs/guides/adding-features.md](docs/guides/adding-features.md) — stretch goals and extra features
 - [docs/guides/modifying-context.md](docs/guides/modifying-context.md) — how to customize your AGENTS.md
 - [docs/planning-conversation-guide.md](docs/planning-conversation-guide.md) — planning guide used in Part 1 (also available as a [gist](https://gist.github.com/cynthiateeters/b2aa58e6f6c67fb2400309c8543febc5))
+- [docs/course/how-agents-md-and-reflections-work.md](docs/course/how-agents-md-and-reflections-work.md) — how AGENTS.md and weekly reflections work across the project
+- [docs/course/weekly-updates-how-it-works.md](docs/course/weekly-updates-how-it-works.md) — how you receive weekly instruction updates via GitHub PRs
 
 ## Where your site lives
 
