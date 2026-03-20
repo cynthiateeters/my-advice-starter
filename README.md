@@ -30,6 +30,7 @@ Your docs folder has everything you need:
 - [docs/a-good-agents-md.md](docs/a-good-agents-md.md) — what makes an effective AGENTS.md
 - [docs/error-log.md](docs/error-log.md) — error tracking table (maintained throughout the project)
 - [docs/tutorials/dev-tooling-overview.md](docs/tutorials/dev-tooling-overview.md) — the big picture: how all the tools fit together
+- [docs/tutorials/logic-vs-dom.md](docs/tutorials/logic-vs-dom.md) — why logic and DOM code live in separate files
 - [docs/tutorials/why-linting.md](docs/tutorials/why-linting.md) — what linting is and why it matters
 - [docs/tutorials/how-husky-works.md](docs/tutorials/how-husky-works.md) — how pre-commit hooks work
 - [docs/tutorials/github-actions-101.md](docs/tutorials/github-actions-101.md) — understanding CI with GitHub Actions
