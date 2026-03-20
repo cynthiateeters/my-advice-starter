@@ -20,6 +20,7 @@ JavaScript student, post-midterm. Knows: `const`/`let`, template literals, `if/e
 - `const` by default; `let` only when reassignment needed; never `var`
 - `textContent` for user input in DOM; `innerHTML` only for hardcoded template literals
 - No `eval()`; `console.log` is allowed for debugging during development
+- No `fetch()`, `async`, `await`, or Promises — all data must come from the local `data.js` array
 - Logic functions (filtering, matching, data) must not touch the DOM — keep them testable
 
 ### HTML

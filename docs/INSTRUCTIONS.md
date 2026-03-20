@@ -61,9 +61,9 @@ Now you will use your build prompt to generate your site inside this repo.
 
 1. **Make sure `BUILD-PROMPT.md` is in the root of this repo**
 2. **Open this repo in VS Code agent mode**
-3. **Paste the contents of `BUILD-PROMPT.md`** as your first message to the agent
+3. **Paste the contents of `BUILD-PROMPT.md`** as your first message to the agent. Tell the agent to **replace** the existing placeholder files (`index.html`, `src/js/app.js`, `src/css/style.css`) with your site — do not append to them.
 4. The agent will generate files:
-   - `index.html` in the repo root
+   - `index.html` in the repo root (replaces the placeholder)
    - JavaScript files in `src/js/` (`data.js`, `matching.js`, `app.js`) and CSS in `src/css/`
 5. **Run the linter:**
 

@@ -5,7 +5,7 @@ Use this checklist to make sure you have completed every part of the assignment.
 ## Part 1 — Plan your site with your agent
 
 - [ ] Opened original "What Should I...?" repo in VS Code
-- [ ] Started a Copilot agent conversation with the provided opening message
+- [ ] Started a Copilot agent conversation (in the original repo, not this one) with the planning guide gist
 - [ ] Agent's first response referenced specific files and content from the repo
 - [ ] Had a back-and-forth planning conversation (not just one message)
 - [ ] Produced a `BUILD-PROMPT.md` file
