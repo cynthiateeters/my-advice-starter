@@ -6,7 +6,7 @@ This assignment has five parts. Work through them in order. Each part builds on 
 
 ## Part 1 — Plan your site with your agent
 
-Before you touch this repo, you need a plan. You will create that plan in your **original** "What Should I...?" repo by having a planning conversation with an AI agent.
+Before you touch this repo, you need a plan. You will create that plan in your **original** "What Should I...?" repo — the site you built earlier in the course (e.g., "What Should I Listen To?") — by having a planning conversation with an AI agent.
 
 1. **You will be closing this repo soon**, but first read through all of Part 1 so you know what to expect.
 2. **Open this gist URL:** `https://gist.github.com/cynthiateeters/b2aa58e6f6c67fb2400309c8543febc5` — this is your planning guide. It walks you through the conversation, model selection, and creating your `BUILD-PROMPT.md`.
@@ -24,6 +24,8 @@ Before you touch this repo, you need a plan. You will create that plan in your *
 ## Part 2 — Get it running
 
 If you have already cloned this repo and run `npm install`, confirm everything still works and move on. If not, do it now.
+
+> **Before you start**, read [docs/tutorials/dev-tooling-overview.md](tutorials/dev-tooling-overview.md). It explains how all the tools in this repo fit together. You do not need to memorize it — just get the big picture. Come back to it whenever something surprises you.
 
 1. **Clone this repo** and open it in VS Code
 2. **Install dependencies:**
@@ -46,7 +48,7 @@ If you have already cloned this repo and run `npm install`, confirm everything s
    npm run lint
    ```
 
-   This should pass with no errors (you may see a `no-console` warning from the placeholder `app.js` — that is fine).
+   This should pass with no errors.
 5. **Confirm Husky is working:** Make a small test commit (like editing this file with a comment). When you commit, you should see lint-staged run in your terminal. If it does, Husky is installed correctly. You can revert this commit afterward if you like.
 
 Once everything runs without errors, you are ready for Part 3.
@@ -106,13 +108,19 @@ Wrap up by building, deploying, and reflecting on the process.
    ```
 
    Confirm Vite builds successfully with no errors.
-2. **Deploy to Netlify using the Netlify CLI.** If you haven't set up the CLI yet, see the Netlify CLI guide on Canvas for installation and login steps. Then deploy:
+2. **Deploy to Netlify using the Netlify CLI.** If you haven't set up the CLI yet, see [docs/reference/cli-tools.md](reference/cli-tools.md) for installation and login steps. If this is your first deploy from this repo, initialize the site first:
+
+   ```bash
+   netlify init
+   ```
+
+   When prompted, choose "Create & configure a new site" and set the publish directory to `dist`. Then deploy:
 
    ```bash
    netlify deploy --prod
    ```
 
-   Follow the prompts to link your repo to a new Netlify site. Save your live URL — you will submit it.
+   Save your live URL — you will submit it.
 3. **Push to GitHub** and check the Actions tab — confirm the lint workflow runs and shows a green check
 4. **Complete `ai-collaboration-summary-template.md`** — answer every question thoughtfully. This is where you reflect on what you learned about working with AI agents in a real tooling environment.
 

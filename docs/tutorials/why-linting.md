@@ -21,13 +21,12 @@ Teams use linters because:
 
 ## The rules in this project
 
-This project's `.eslintrc.cjs` has five key rules:
+This project's `.eslintrc.cjs` extends `eslint:recommended` (a bundle of ~30 rules the ESLint team considers essential, like catching unused variables and accidental duplicate keys) and adds four project-specific rules:
 
 - **`no-eval`** — blocks `eval()`. You already know why from Security Safari.
 - **`no-var`** — blocks `var`. You have been using `const` and `let` since early in the course. `var` has scoping behavior that causes subtle bugs.
 - **`prefer-const`** — if a variable is never reassigned, use `const`. This makes your intent clear.
 - **`no-console`** — warns on `console.log`. Useful for debugging, but should not be in finished code.
-- **`eslint:recommended`** — a bundle of rules the ESLint team considers essential, like catching unused variables and accidental duplicate keys in objects.
 
 ## Quick reference
 
