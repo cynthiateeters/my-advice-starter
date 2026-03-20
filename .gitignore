@@ -23,3 +23,6 @@ repomix-output.*
 
 # Instructor reports — not part of the student deliverable
 reports/
+
+# Local Netlify folder
+.netlify
