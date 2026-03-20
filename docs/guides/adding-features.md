@@ -24,7 +24,7 @@ describe("yourFunction", () => {
 });
 ```
 
-Run it with `npm run test`. Replace `yourFunction` with an actual function from your matching logic.
+Run it with `npm run test`. Vitest starts in watch mode — it will keep running and re-test when you save changes. Press `q` to quit when you are done. Replace `yourFunction` with an actual function from your matching logic.
 
 ---
 
